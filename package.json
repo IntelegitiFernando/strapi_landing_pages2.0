@@ -7,14 +7,15 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "postinstall": "cd src/plugins/wysiwyg && npm i"
   },
-  "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.1.1",
-    "@strapi/plugin-users-permissions": "4.1.1",
     "@strapi/plugin-i18n": "4.1.1",
-    "pg": "8.6.0"
+    "@strapi/plugin-users-permissions": "4.1.1",
+    "@strapi/strapi": "4.1.1",
+    "pg": "8.6.0",
+    "wysiwyg": "^2.0.0"
   },
   "author": {
     "name": "A Strapi developer"
@@ -23,7 +24,7 @@
     "uuid": "d2431c05-c87b-4a3d-9b91-78405c4a2185"
   },
   "engines": {
-    "node": ">=12.x.x <=16.x.x",
+    "node": ">=14.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
